@@ -1,0 +1,7 @@
+<ul>
+  <% @pitches.each do |pitch| %>
+    <li><%=link_to pitch.name, pitch_path(pitch)%></li>
+    <li><%= pitch.sport %></li>
+    <%= link_to pitch_path%>
+  <% end %>
+</ul>

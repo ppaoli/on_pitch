@@ -1,0 +1,386 @@
+.main {
+  position: relative;
+  width: 1200px;
+  height: 3378px;
+  margin: auto;
+
+  background: #FFFFFF;
+}
+
+.pitch-title {
+  position: absolute;
+  width: 321px;
+  height: 38px;
+  left: 24px;
+  top: 118px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 38px;
+  /* identical to box height, or 146% */
+  letter-spacing: 0.64px;
+
+  color: #000000;
+}
+
+.sport {
+  position: absolute;
+  width: 87px;
+  height: 24px;
+  left: 773px;
+  top: 708px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  color: #000000;
+}
+
+.address {
+  position: absolute;
+  width: 200px;
+  height: 20px;
+  left: 157px;
+  top: 160px;
+
+  // border-style: solid;
+  // border-color: red;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  /* identical to box height, or 154% */
+
+  color: #000000;
+}
+
+.reviews {
+  position: absolute;
+  width: 69px;
+  height: 20px;
+  left: 77px;
+  top: 160px;
+
+  display:block;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+
+  color: #000000;
+}
+
+.reviews:hover {
+  position: absolute;
+  width: 69px;
+  height: 20px;
+  left: 77px;
+  top: 160px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+
+  color: #7e7676;
+}
+
+.review-underline {
+  position: absolute;
+  width: 69px;
+  height: 1px;
+  left: 77px;
+  top: 181px;
+
+  background: #C2C2C2;
+}
+
+.country {
+  position: absolute;
+  width: 250px;
+  height: 20px;
+  left: 24px;
+  top: 94px;
+
+  display:block;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+
+  color: #000000;
+
+}
+
+.country:hover {
+  position: absolute;
+  width: 250px;
+  height: 20px;
+  left: 24px;
+  top: 94px;
+
+  display:block;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+
+  color: #7e7676;
+}
+
+.rating-percentage {
+  position: absolute;
+  width: 34px;
+  height: 20px;
+  left: 36px;
+  top: 160px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height, or 125% */
+
+  color: #00C585;
+}
+
+.main {
+  background-color: white;
+}
+
+.units-available {
+  position: absolute;
+  width: 54px;
+  height: 30px;
+  left: 53px;
+  top: 689px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 30px;
+  /* identical to box height, or 158% */
+
+  color: #000000;
+}
+
+.unit-line {
+  position: absolute;
+  width: 1px;
+  height: 78px;
+  left: 125px;
+  top: 667px;
+
+  background: #DEDEDE;
+}
+
+.players {
+  position: absolute;
+  width: 104px;
+  height: 24px;
+  left: 144px;
+  top: 693px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  /* identical to box height, or 160% */
+  text-align: center;
+
+  color: #000000;
+}
+
+.activities {
+  position: absolute;
+  width: 75px;
+  height: 26px;
+  left: 763px;
+  top: 667px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  /* identical to box height, or 144% */
+
+  color: #000000;
+}
+
+.features {
+  position: absolute;
+  width: 129px;
+  height: 26px;
+  left: 966px;
+  top: 667px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  /* identical to box height, or 144% */
+
+  color: #000000;
+}
+
+.private {
+  position: absolute;
+  width: 83px;
+  height: 24px;
+  left: 974px;
+  top: 708px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  /* identical to box height, or 160% */
+
+  color: #000000;
+}
+
+.text-1 {
+  position: absolute;
+  width: 619px;
+  height: 48px;
+  left: 24px;
+  top: 770px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  /* or 133% */
+
+  color: #000000;
+}
+
+.text-2 {
+  position: absolute;
+  width: 627px;
+  height: 144px;
+  left: 24px;
+  top: 834px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  /* or 133% */
+
+  color: #000000;
+}
+
+.availability {
+  position: absolute;
+  width: 159px;
+  height: 30px;
+  left: 24px;
+  top: 1049px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 30px;
+  /* identical to box height, or 143% */
+
+  color: #000000;
+}
+
+.dates {
+  position: absolute;
+  width: 43px;
+  height: 14px;
+  left: 24px;
+  top: 1090px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 14px;
+  /* identical to box height, or 108% */
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+
+  color: #000000;
+}
+
+.date-box {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 568px;
+  height: 48px;
+  left: 24px;
+  top: 1127px;
+
+  background: #FFFFFF;
+  border: 1px solid #E5EADF;
+  border-radius: 24px;
+}
+
+.enter-date {
+  position: absolute;
+  width: 87px;
+  height: 26px;
+  left: 50px;
+  top: 1138px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 26px;
+  /* identical to box height, or 153% */
+
+  color: #818181;
+}
+
+.middle-line {
+  position: absolute;
+  width: 1152px;
+  height: 1px;
+  left: 24px;
+  top: 1266px;
+
+  background: #DEDEDE;
+}
+
+img {
+  position: absolute;
+  width: 1152px;
+  height: 431px;
+  left: 24px;
+  top: 204px;
+
+  border-radius: 20px;
+}

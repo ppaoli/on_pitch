@@ -4,6 +4,6 @@ class PitchesController < ApplicationController
   end
 
   def show
-  @pitch = Pitch.find(params[:id])
+    @pitch = Pitch.find(params[:id])
   end
 end

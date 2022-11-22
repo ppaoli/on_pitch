@@ -1,2 +1,60 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+
+
+<nav class="navbar navbar-expand-lg"  class="p-3 mb-2 bg-gradient-light text-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">OnPitch</a>
+    <div class="d-flex flex-row-reverse">
+        <ul class="navbar-nav" class="ms-4">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Submit a venue</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Log in</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-success me-2 text-white" type="button" href="#"> Sign up</a>
+          </li>
+        </ul>
+        <form class="d-flex position-relative" role="search">
+          <input class="form-control search-input" type="search" placeholder="Start your search" aria-label="Search">
+          <button class="btn btn-outline-success search" type="submit">
+          <i class="fa-solid fa-magnifying-glass small-btn"></i></button>
+        </form>
+    </div>
+  </div>
+</nav>
+
+<div class= "container mt-2">
+  <div class = "top-banner mb-3">
+  <img src="https://cdn2.wanderlust.co.uk/media/1063/img_141216_15030409_w19cs.jpg?anchor=center&mode=crop&width=1200&height=0&rnd=132049994090000000" alt="pitch 1" class = "pitch-1">
+  </div>
+  <div class="d-flex justify-content-between mt-2 mb-3 middle-banner" >
+    <div class="middle-banner-left">
+      <img src="https://miro.medium.com/max/1400/0*0yRYoE7pSAeL0hUs.jpg" alt="pitch 2">
+        <div class="d-flex justify-content-around middle-banner-content-left">
+          <div class="middle-banner-text">
+          <h6>OUTDOOR PITCHES</h6>
+          <p>Get some fresh air and exercise this autumn.</p>
+          </div>
+         <%= link_to "Book now", "#", class: "btn btn-primary" %>
+        </div>
+    </div>
+    <div class="middle-banner-right">
+    <img src="https://hashtaglegend.com/storage/app/media/Article%20Images/pigalle-paris-basketball-court-02.jpg" alt="pitch 3">
+      <div class="d-flex justify-content-around middle-banner-content-right">
+          <div class="middle-banner-text">
+          <h6>PlAY BALL THIS WEEK END</h6>
+          <p>Find your pitch, roll up in your van or find a nearby stay.</p>
+          </div>
+         <%= link_to "Book now", "#", class: "btn btn-primary" %>
+      </div>
+    </div>
+  </div>
+
+  <div class= "third-banner">
+  <img src="https://padelcreations.b-cdn.net/wp-content/uploads/2021/11/padel-court-panoramic-outdoor-padelcreations.-PANORAMIC-OUTDOOR-by-Padelcreations-2.jpg" alt="pitch 4">
+  </div>
+</div>

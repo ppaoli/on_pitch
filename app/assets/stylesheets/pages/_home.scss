@@ -1,1 +1,93 @@
 // Specific CSS for your home-page
+
+.nav-item btn {
+  border-radius: 5px;
+  color: white;
+}
+
+.pitch-1 {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.nav-link{
+  color: black;
+}
+
+.search{
+  background-color: #1EDD87;
+  height: 32px;
+  width: 32px;
+  position: absolute;
+  right: 6px;
+  padding: 0px;
+  top:calc(50% - 17px);
+  border-radius: 50%;
+}
+
+.small-btn{
+  color:black;
+
+}
+
+.search-input {
+  padding-right:100px;
+  height: 38px;
+  border-radius: 30px;
+  background-color: white;
+}
+
+.top-banner {
+  width: 100%;
+  // height: 500px;
+  img {
+  object-fit: cover;
+  // height: auto;
+  border-radius: 8px;
+  // display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  }
+}
+
+.middle-banner {
+  width: 100%;
+  .middle-banner-left {
+    width:45%;
+  }
+  .middle-banner-right{
+    width:45%;
+  }
+  img {
+    width:100%;
+  object-fit: cover;
+  border-radius: 8px;
+  }
+}
+
+.third-banner {
+  width: 100%;
+  img {
+  object-fit: cover;
+  width:100%;
+  border-radius: 8px;
+  }
+}
+
+.middle-banner-content-left {
+  width:100%;
+  height: 80px;
+  background-color: orange;
+  color: white;
+  transform: translateY(-80px);
+}
+
+.middle-banner-content-right{
+  width:100%;
+  height: 80px;
+  background-color:#9A9D68;
+  color: white;
+  transform: translateY(-80px);
+}

@@ -1,5 +1,63 @@
-<h2><%= @pitch.name %></h2>
-<p><%= @pitch.sport %></p>
-<p><%= @pitch.address %></p>
-<br>
-<%= link_to "See all Pitches", pitches_path%>
+<div class="main">
+  <div class="pitch-title">
+    <h2><%= @pitch.name %></h2>
+  </div>
+  <div class="sport">
+    <p><%= @pitch.sport %></p>
+  </div>
+  <div class="reviews">
+    <p>50 Reviews</p>
+  </div>
+  <a href="http://localhost:3000/reviews"><span class="reviews">50 Reviews</span></a>
+  <div class="review-underline">
+  </div>
+  <div class="address">
+    <p><%= @pitch.address %></p>
+  </div>
+  <%# <div class="country">
+    <p>United Kingdom > England</p>
+  </div> %>
+  <a href="http://localhost:3000/countries"><span class="country">United Kingdom > England</span></a>
+  <div class="rating-percentage">
+    <p>97%</p>
+  </div>
+  <div class="units-available">
+    <p>1 unit</p>
+  </div>
+  <div class="unit-line">
+  </div>
+  <div class="players">
+    <p>Up to 4 players</p>
+  </div>
+  <div class="activities">
+    <p>Activities</p>
+  </div>
+  <div class="features">
+    <p>Features</p>
+  </div>
+  <div class="private">
+    <p>Private</p>
+  </div>
+  <div class="text-1">
+    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+  </div>
+  <div class="text-2">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+  <div class="availability">
+    <p>Availability</p>
+  </div>
+  <div class="dates">
+    <p>Dates</p>
+  </div>
+  <div class="date-box">
+  </div>
+  <div class="enter-date">
+    <p>Enter date</p>
+  </div>
+  <div class="middle-line">
+  </div>
+
+  <%= image_tag 'tennis_pitch.jpg' %>
+    <%# <%= link_to "See all Pitches", pitches_path %>
+</div>

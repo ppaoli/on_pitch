@@ -1,3 +1,31 @@
+<nav class="navbar navbar-expand-lg"  class="p-3 mb-2 bg-gradient-light text-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">OnPitch</a>
+    <div class="d-flex flex-row-reverse">
+        <ul class="navbar-nav" class="ms-4">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Submit a venue</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Log in</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-success me-2 text-white" type="button" href="#"> Sign up</a>
+          </li>
+        </ul>
+        <form class="d-flex position-relative" role="search">
+          <input class="form-control search-input" type="search" placeholder="Start your search" aria-label="Search">
+          <button class="btn btn-outline-success search" type="submit">
+          <i class="fa-solid fa-magnifying-glass small-btn"></i>
+          </button>
+        </form>
+    </div>
+  </div>
+</nav>
+
 <div class="main">
   <div class="pitch-title">
     <h2><%= @pitch.name %></h2>
@@ -23,7 +51,7 @@
     <p>97%</p>
   </div>
   <div class="thumbs-up">
-
+    <%= image_tag 'thumbs-up.jpg' %>
   </div>
   <div class="units-available">
     <p>1 unit</p>
@@ -65,4 +93,41 @@
     <%# <%= link_to "See all Pitches", pitches_path %>
   <div class="host"><%= image_tag 'host-photo.jpg' %></div>
   <div class="host-name">Hosted By Amy R.</div>
+  <div class="host-join-date">Joined in February 2017</div>
+  <div class="contact-box"></div>
+  <a href="http://localhost:3000/hosts"><span class="contact">Contact Host</span></a>
+  <div class="contact-line"></div>
+  <div class="review-thumbs-up"><%= image_tag 'thumbs-up.jpg' %></div>
+  <div class="review-percentage">
+    <p>97%</p>
+  </div>
+  <div class="ratings-reviews">31 Ratings · 50 reviews</div>
+  <div class="review-icon-1">
+    <%= image_tag 'review icon.jpg' %>
+  </div>
+  <div class="review-icon-2">
+    <%= image_tag 'review icon.jpg' %>
+  </div>
+  <div class="review-icon-3">
+    <%= image_tag 'review icon.jpg' %>
+  </div>
+  <%# <div class="green-circle-1"></div> %>
+  <div class="thumbs-up-1"><%= image_tag 'thumbs-up.jpg' %></div>
+  <div class="thumbs-up-2"><%= image_tag 'thumbs-up.jpg' %></div>
+  <div class="thumbs-up-3"><%= image_tag 'thumbs-up.jpg' %></div>
+  <div class="review-text-1">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</div>
+  <div class="review-text-2">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+  <div class="review-text-3">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</div>
+  <div class="host-name-1">Lucy K.</div>
+  <div class="host-name-2">Matthew T.</div>
+  <div class="host-name-3">Caroline B.</div>
+  <div class="show-more-box"></div>
+  <a href="http://localhost:3000/reviews"><span class="show-more">Show More</span></a>
+  <div class="line-host"></div>
+  <div class="line-facilities"></div>
+  <div class="line-1"></div>
+  <div class="host-info">From the host</div>
+  <div class="host-info-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+  <div class="facility-info">Nearby facilities</div>
+  <div class="facility-info-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</div>
 </div>

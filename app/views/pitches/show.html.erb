@@ -63,7 +63,7 @@
   value="2022-11-23" min="2022-11-23" max="2030-12-31">
   <div class="middle-line">
   </div>
-  <div class="pitch"><%= image_tag 'tennis_pitch.jpg' %></div>
+  <div class="pitch"><%= cl_image_tag @pitch.photo.key, crop: :fill, class: "pitch_unique"%></div>
     <%# <%= link_to "See all Pitches", pitches_path %>
   <div class="host"><%= image_tag 'host-photo.jpg' %></div>
   <div class="host-name">Hosted By Amy R.</div>

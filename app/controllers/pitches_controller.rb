@@ -22,10 +22,8 @@ class PitchesController < ApplicationController
   end
 
 
-private
-def pitch_params
-  params.require(:pitch).permit(:name, :address, :sport)
-  # addPhotoWhenReady
-end
-
+    private
+  def pitch_params
+    params.require(:pitch).permit(:name, :address, :sport, :photo)
+  end
 end

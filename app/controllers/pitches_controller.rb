@@ -13,9 +13,9 @@ class PitchesController < ApplicationController
 
   def create
     @pitch = Pitch.new(pitch_params)
-
+    @pitch.user = current_user
     if @pitch.save
-      redirect_to pitch_path(@pitch)
+      redirect_to pitches_path
     else
       render :new, status: :unprocessable_entity
     end

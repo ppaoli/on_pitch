@@ -1,5 +1,3 @@
-
-
 <nav class="navbar navbar-expand-lg"  class="p-3 mb-2 bg-gradient-light text-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">OnPitch</a>
@@ -21,40 +19,120 @@
         <form class="d-flex position-relative" role="search">
           <input class="form-control search-input" type="search" placeholder="Start your search" aria-label="Search">
           <button class="btn btn-outline-success search" type="submit">
-          <i class="fa-solid fa-magnifying-glass small-btn"></i></button>
+          <i class="fa-solid fa-magnifying-glass small-btn"></i>
+          </button>
         </form>
     </div>
   </div>
 </nav>
 
-<div class= "container mt-2">
-  <div class = "top-banner mb-3">
-  <img src="https://cdn2.wanderlust.co.uk/media/1063/img_141216_15030409_w19cs.jpg?anchor=center&mode=crop&width=1200&height=0&rnd=132049994090000000" alt="pitch 1" class = "pitch-1">
+
+<div class= "container mt-2 bg-white pt-2">
+  <div class = "title pb-4">
+    <h1>Less work, more play. </h1>
+    <p>Discover and book your favourite pitch!</p>
   </div>
+  <div class = "top-banner">
+    <div class="top-picture">
+    <img src="https://cdn2.wanderlust.co.uk/media/1063/img_141216_15030409_w19cs.jpg?anchor=center&mode=crop&width=1200&height=0&rnd=132049994090000000" alt="pitch 1" class = "pitch-1">
+    </div>
+    <div class = "d-flex justify-content-around multi-search pt-2 ">
+      <div class="sport-search d-flex flex-column">
+        <label for="sport">Sport</label>
+        <input class= "sport" type="text" placeholder="Enter sport">
+      </div>
+      <div class="location-search d-flex flex-column">
+        <label for="location">Location</label>
+        <input class= "location" type="location" placeholder="Enter location">
+      </div>
+      <a href="#"class="btn btn-outline-success search" type="submit">
+        <i class="fa-solid fa-magnifying-glass small-btn"></i>
+      </a>
+      <div class="date-search d-flex flex-column">
+        <label for="start">Date</label>
+        <input class = "date-label" type="date" id="start" name="trip-start"
+          value="2018-07-22"
+          min="today" max="2023-12-31">
+      </div>
+    </div>
+  </div>
+
+  <div class="sports_filter">
+  <%= link_to pitches_path do  %>
+    <button class="btn"><i class="fa-solid fa-basketball fa-3x"></i> <br> Basketball</button>
+  <% end %>
+
+  <%= link_to pitches_path do  %>
+      <button class="btn"><i class="fa-regular fa-circle fa-3x"></i> <br> Tennis</button>
+  <% end %>
+
+  <%= link_to pitches_path do  %>
+    <button class="btn"><i class="fa-solid fa-futbol fa-3x"></i> <br> Football</button>
+  <% end %>
+
+  <%= link_to pitches_path do  %>
+    <button class="btn"><i class="fa-solid fa-feather fa-3x"></i> <br> Badminton</button>
+  <% end %>
+
+  <%= link_to pitches_path do  %>
+    <button class="btn"><i class="fa-solid fa-baseball-bat-ball fa-3x"></i> <br> Cricket</button>
+  <% end %>
+
+  <%= link_to pitches_path do  %>
+    <button class="btn"><i class="fa-regular fa-circle fa-3x"></i> <br> Padel</button>
+  <% end %>
+
+  <%= link_to pitches_path do  %>
+    <button class="btn"><i class="fa-solid fa-wine-bottle fa-3x"></i> <br> Pickleball</button>
+  <% end %>
+
+  <%= link_to pitches_path do  %>
+    <button class="btn"><i class="fa-solid fa-golf-ball-tee fa-3x"></i> <br> Golf </button>
+  <% end %>
+
+  <%= link_to pitches_path do  %>
+    <button class="btn"><i class="fa-solid fa-table-tennis-paddle-ball fa-3x"></i> <br> Tabletennis</button>
+  <% end %>
+
+  <%= link_to pitches_path do  %>
+    <button class="btn"><i class="fa-solid fa-volleyball fa-3x"></i> <br> Volleyball</button>
+  <% end %>
+  </div>
+
   <div class="d-flex justify-content-between mt-2 mb-3 middle-banner" >
     <div class="middle-banner-left">
       <img src="https://miro.medium.com/max/1400/0*0yRYoE7pSAeL0hUs.jpg" alt="pitch 2">
         <div class="d-flex justify-content-around middle-banner-content-left">
           <div class="middle-banner-text">
-          <h6>OUTDOOR PITCHES</h6>
-          <p>Get some fresh air and exercise this autumn.</p>
+          <p>OUTDOOR PITCHES</p>
+          <h6>Get some fresh air and exercise this autumn.</h6>
           </div>
-         <%= link_to "Book now", "#", class: "btn btn-primary" %>
+          <button type="button" class="btn book-now">Book now
+          </button>
         </div>
     </div>
     <div class="middle-banner-right">
-    <img src="https://hashtaglegend.com/storage/app/media/Article%20Images/pigalle-paris-basketball-court-02.jpg" alt="pitch 3">
-      <div class="d-flex justify-content-around middle-banner-content-right">
+      <img src="https://hashtaglegend.com/storage/app/media/Article%20Images/pigalle-paris-basketball-court-02.jpg" alt="pitch 3">
+        <div class="d-flex justify-content-around middle-banner-content-right">
           <div class="middle-banner-text">
-          <h6>PlAY BALL THIS WEEK END</h6>
-          <p>Find your pitch, roll up in your van or find a nearby stay.</p>
+          <p>PlAY BALL THIS WEEK END</p>
+          <h6>Find your pitch, roll up in your van or find a nearby stay.</h6>
           </div>
-         <%= link_to "Book now", "#", class: "btn btn-primary" %>
+          <button type="button" class="btn book-now2">Book now
+          </button>
       </div>
     </div>
   </div>
 
   <div class= "third-banner">
-  <img src="https://padelcreations.b-cdn.net/wp-content/uploads/2021/11/padel-court-panoramic-outdoor-padelcreations.-PANORAMIC-OUTDOOR-by-Padelcreations-2.jpg" alt="pitch 4">
+    <div class ="bottom-picture">
+      <img src="https://padelcreations.b-cdn.net/wp-content/uploads/2021/11/padel-court-panoramic-outdoor-padelcreations.-PANORAMIC-OUTDOOR-by-Padelcreations-2.jpg" alt="pitch 4">
+    </div>
+    <div class="earn-money">
+      <h4> Own a sports pitch? Earn money with OnPitch </h4>
+      <p> Open your pitch up to bookings from our community of sports lovers from all around the UK!</p>
+      <button type="button" class="btn learn-more">Learn more
+      </button>
+    </div>
   </div>
 </div>

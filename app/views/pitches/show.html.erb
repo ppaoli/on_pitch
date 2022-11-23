@@ -4,9 +4,6 @@
   <div class="pitch-title">
     <h2><%= @pitch.name %></h2>
   </div>
-  <div class="sport">
-    <p><%= @pitch.sport %></p>
-  </div>
   <div class="reviews">
     <p>50 Reviews</p>
   </div>
@@ -35,8 +32,13 @@
   <div class="players">
     <p>Up to 4 players</p>
   </div>
-  <div class="activities">
-    <p>Activities</p>
+  <div class="activites-container">
+    <div class="activities">
+      <p>Activities</p>
+    </div>
+    <div class="sport">
+      <p><%= @pitch.sport %></p>
+    </div>
   </div>
   <div class="features">
     <p>Features</p>
@@ -61,6 +63,10 @@
   <label for="start"></label>
   <input type="date" class="date-box" id="start" name="trip-start"
   value="2022-11-23" min="2022-11-23" max="2030-12-31">
+  <label for="appt"></label>
+  <input type="time" class="time-box" id="appt" name="appt" min="09:00" max="22:00" required>
+  <div class="booking-box"></div>
+  <a href="http://localhost:3000/bookings"><span class="booking">Book Pitch</span></a>
   <div class="middle-line">
   </div>
   <div class="pitch"><%= cl_image_tag @pitch.photo.key, crop: :fill, class: "pitch_unique"%></div>

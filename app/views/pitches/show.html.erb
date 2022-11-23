@@ -1,37 +1,8 @@
-<nav class="navbar navbar-expand-lg"  class="p-3 mb-2 bg-gradient-light text-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">OnPitch</a>
-    <div class="d-flex flex-row-reverse">
-        <ul class="navbar-nav" class="ms-4">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Submit a venue</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Log in</a>
-          </li>
-          <li class="nav-item">
-            <a class="btn btn-success me-2 text-white" type="button" href="#"> Sign up</a>
-          </li>
-        </ul>
-        <form class="d-flex position-relative" role="search">
-          <input class="form-control search-input" type="search" placeholder="Start your search" aria-label="Search">
-          <button class="btn btn-outline-success search" type="submit">
-          <i class="fa-solid fa-magnifying-glass small-btn"></i>
-          </button>
-        </form>
-    </div>
-  </div>
-</nav>
+
 
 <div class="main">
   <div class="pitch-title">
     <h2><%= @pitch.name %></h2>
-  </div>
-  <div class="sport">
-    <p><%= @pitch.sport %></p>
   </div>
   <div class="reviews">
     <p>50 Reviews</p>
@@ -61,8 +32,13 @@
   <div class="players">
     <p>Up to 4 players</p>
   </div>
-  <div class="activities">
-    <p>Activities</p>
+  <div class="activites-container">
+    <div class="activities">
+      <p>Activities</p>
+    </div>
+    <div class="sport">
+      <p><%= @pitch.sport %></p>
+    </div>
   </div>
   <div class="features">
     <p>Features</p>
@@ -87,9 +63,13 @@
   <label for="start"></label>
   <input type="date" class="date-box" id="start" name="trip-start"
   value="2022-11-23" min="2022-11-23" max="2030-12-31">
+  <label for="appt"></label>
+  <input type="time" class="time-box" id="appt" name="appt" min="09:00" max="22:00" required>
+  <div class="booking-box"></div>
+  <a href="http://localhost:3000/bookings"><span class="booking">Book Pitch</span></a>
   <div class="middle-line">
   </div>
-  <div class="pitch"><%= image_tag 'tennis_pitch.jpg' %></div>
+  <div class="pitch"><%= cl_image_tag @pitch.photo.key, crop: :fill, class: "pitch_unique" %></div>
     <%# <%= link_to "See all Pitches", pitches_path %>
   <div class="host"><%= image_tag 'host-photo.jpg' %></div>
   <div class="host-name">Hosted By Amy R.</div>

@@ -348,6 +348,20 @@
   border-radius: 24px;
 }
 
+.time-box {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 78px;
+  height: 48px;
+  left: 135px;
+  top: 1127px;
+
+  background: #FFFFFF;
+  border: 1px solid #E5EADF;
+  border-radius: 24px;
+}
+
 .enter-date {
   position: absolute;
   width: 87px;
@@ -363,6 +377,53 @@
   /* identical to box height, or 153% */
 
   color: #818181;
+}
+
+.booking-box {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 142px;
+  height: 48px;
+  left: 230px;
+  top: 1127px;
+
+  border: 1px solid #3C3C3C;
+  border-radius: 8px;
+}
+
+.booking {
+  position: absolute;
+  width: 92px;
+  height: 21px;
+  left: 263px;
+  top: 1140px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  /* identical to box height, or 129% */
+
+  color: #000000;
+}
+
+.booking:hover {
+  position: absolute;
+  width: 92px;
+  height: 21px;
+  left: 263px;
+  top: 1140px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  /* identical to box height, or 129% */
+
+  color: #7e7676;
 }
 
 .middle-line {
@@ -850,4 +911,8 @@
     /* or 141% */
 
     color: #000000;
+  }
+
+  .pitch_unique {
+    object-fit: cover;
   }

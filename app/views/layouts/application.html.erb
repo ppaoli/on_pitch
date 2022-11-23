@@ -10,6 +10,36 @@
   </head>
 
   <body>
+  <nav class="navbar navbar-expand-lg"  class="p-3 mb-2 bg-gradient-light text-dark">
+  <div class="container-fluid">
+    <%= link_to "On Pitch", root_path, class: "navbar-brand" %>
+    <%# <a class="navbar-brand" href="#">OnPitch</a> %>
+    <div class="d-flex flex-row-reverse">
+        <ul class="navbar-nav" class="ms-4">
+          <li class="nav-item">
+            <%= link_to "All Pitches", pitches_path, class: "btn nav-link" %>
+            <%# <a class="nav-link" aria-current="page" href="#">About</a> %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Submit a venue", new_pitch_path, class: "btn nav-link" %>
+          </li>
+          <li class="nav-item">
+             <%= link_to "Log in", 'users/sign_up',class: "btn nav-link" %>
+          </li>
+          <li class="nav-item">
+          <%= link_to "Sign up", new_user_registration_path, class: "btn btn-success me-2 text-white" %>
+            <%# <a class="btn btn-success me-2 text-white" type="button" href="#"> Sign up</a> %>
+          </li>
+        </ul>
+        <form class="d-flex position-relative" role="search">
+          <input class="form-control search-input" type="search" placeholder="Start your search" aria-label="Search">
+          <button class="btn btn-outline-success search" type="submit">
+          <i class="fa-solid fa-magnifying-glass small-btn"></i>
+          </button>
+        </form>
+    </div>
+  </div>
+</nav>
     <%= yield %>
   </body>
 </html>

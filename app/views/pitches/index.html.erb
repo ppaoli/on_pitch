@@ -3,7 +3,10 @@
   <div class="card-container">
     <% @pitches.each do |pitch| %>
     <div class="card">
-      <img src="https://www.allcourts.co.uk/wp-content/uploads/2021/05/Cleatham-Centre-Court-006-2-1-scaled.jpeg" class="card-img-top">
+      <%# <div class="pitch"> %>
+      <%= cl_image_tag pitch.photo.key, crop: :fill, class: "pitch_unique card-img-top" %>
+      <%# </div> %>
+      <%# <img src="https://www.allcourts.co.uk/wp-content/uploads/2021/05/Cleatham-Centre-Court-006-2-1-scaled.jpeg" class="card-img-top"> %>
       <div class="card-body">
         <li><%= pitch.sport %></li>
         <li><%=link_to pitch.name, pitch_path(pitch)%></li>

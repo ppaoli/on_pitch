@@ -4,7 +4,8 @@
     <div class="d-flex flex-row-reverse">
         <ul class="navbar-nav" class="ms-4">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">About</a>
+            <%= link_to "All Pitches", pitches_path, class: "btn nav-link" %>
+            <%# <a class="nav-link" aria-current="page" href="#">About</a> %>
           </li>
           <li class="nav-item">
             <%= link_to "Submit a venue", new_pitch_path, class: "btn nav-link" %>

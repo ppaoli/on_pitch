@@ -1,0 +1,9 @@
+<div class="container">
+<%= simple_form_for(@pitch) do |f| %>
+  <%= f.input :name %>
+  <%= f.input :sport, collection: [ "Football", "Tennis", "Basketball", "Cricket", "Table Tennis", "Squash", "Badminton", "Padel", "Gofl", "Volleyball"  ] %>
+  <%= f.input :address %>
+  <%# <%= f.xxxx :photo from cloudinary %>
+  <%= f.submit %>
+<% end %>
+</div>

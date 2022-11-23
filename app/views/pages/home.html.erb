@@ -7,13 +7,14 @@
             <a class="nav-link" aria-current="page" href="#">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Submit a venue</a>
+            <%= link_to "Submit a venue", new_pitch_path, class: "btn nav-link" %>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Log in</a>
           </li>
           <li class="nav-item">
-            <a class="btn btn-success me-2 text-white" type="button" href="#"> Sign up</a>
+          <%= link_to "Sign up", new_user_registration_path, class: "btn btn-success me-2 text-white" %>
+            <%# <a class="btn btn-success me-2 text-white" type="button" href="#"> Sign up</a> %>
           </li>
         </ul>
         <form class="d-flex position-relative" role="search">

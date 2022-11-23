@@ -375,7 +375,7 @@
   background: #DEDEDE;
 }
 
-img {
+.pitch img {
   position: absolute;
   width: 1152px;
   height: 431px;
@@ -383,4 +383,31 @@ img {
   top: 204px;
 
   border-radius: 20px;
+}
+
+.host img{
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  left: 26px;
+  top: 1318px;
+
+  border-radius: 50px;
+}
+
+.host-name {
+  position: absolute;
+  width: 168px;
+  height: 30px;
+  left: 88px;
+  top: 1316px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 30px;
+  /* identical to box height, or 143% */
+
+  color: #000000;
 }
